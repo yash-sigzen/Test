@@ -3,9 +3,9 @@ name: Release
 
 # Run on every commit tag which begins with "v" (e.g., "v0.1.4")
 on:
-  push:
-    tags:
-      - "v*"
+  pull_request:
+    branches:
+      - master
 
 # Automatically create a GitHub Release, with release details specified (the relevant commits)
 jobs:
